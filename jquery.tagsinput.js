@@ -136,7 +136,7 @@
     };
     
   $.fn.removeTag = function(value, event) { 
-      value = unescape(value);
+      value = unescape(value).trim();
       this.each(function() { 
         var id = $(this).attr('id');
         tr = ($(this).val()).replace(value, '');
